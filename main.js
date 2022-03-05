@@ -53,6 +53,33 @@
 
 // const languages = ["js", "java", "go"];
 
-const languages = new Array("js", "java", "go");
+// const languages = new Array("js", "java", "go");
 
-console.log(languages);
+// console.log(languages);
+
+// const arr = [1, 2, 3, 4, 5];
+// arr.shift();
+// console.log(arr.shift());
+// const name = "Ulug'bek";
+// console.log(name);
+
+// let age = "2022";
+// console.log(Number(age));
+// console.log(String(age));
+
+/* Falsy qiymatlar */
+console.log(Boolean(false));
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+console.log(Boolean(0n));
+
+// Truthy qiymatlar
+console.log(Boolean("Ulugbek"));
+console.log(Boolean(23));
+console.log(Boolean([]));
+console.log(Boolean({}));
+console.log(Boolean("0"));
+console.log(Boolean("false"));
