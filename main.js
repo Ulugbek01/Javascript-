@@ -68,18 +68,57 @@
 // console.log(String(age));
 
 /* Falsy qiymatlar */
-console.log(Boolean(false));
-console.log(Boolean(0));
-console.log(Boolean(""));
-console.log(Boolean(undefined));
-console.log(Boolean(null));
-console.log(Boolean(NaN));
-console.log(Boolean(0n));
+// console.log(Boolean(false));
+// console.log(Boolean(0));
+// console.log(Boolean(""));
+// console.log(Boolean(undefined));
+// console.log(Boolean(null));
+// console.log(Boolean(NaN));
+// console.log(Boolean(0n));
 
 // Truthy qiymatlar
-console.log(Boolean("Ulugbek"));
-console.log(Boolean(23));
-console.log(Boolean([]));
-console.log(Boolean({}));
-console.log(Boolean("0"));
-console.log(Boolean("false"));
+// console.log(Boolean("Ulugbek"));
+// console.log(Boolean(23));
+// console.log(Boolean([]));
+// console.log(Boolean({}));
+// console.log(Boolean("0"));
+// console.log(Boolean("false"));
+// kvadrat(8);
+
+// function kvadrat(son) {
+//   console.log(son * son);
+// }
+
+// kvadrat(3);
+// let result = kvadrat(2);
+// console.log(result);
+
+// const kvadrat = function (son) {
+//   return son * son;
+// };
+// console.log(kvadrat(2));
+
+// function evenOrOdd(number) {
+//   let result;
+//   if (number % 2 === 0) {
+//     result = `Berilgna ${number} juft`;
+//   } else {
+//     result = `Berilgan ${number} toq`;
+//   }
+//   return result;
+// }
+
+// console.log(evenOrOdd(321));
+
+// const evenOrOdd = (num) => {
+//   return num % 2 === 0 ? `${num} juft son` : `${num} toq son`;
+// };
+
+// console.log(evenOrOdd(31));
+
+const reverseFun = (num) => {
+  const numStr = String(num);
+  return numStr.split("").reverse().join("");
+};
+
+console.log(reverseFun(12));
