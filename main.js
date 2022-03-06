@@ -116,9 +116,19 @@
 
 // console.log(evenOrOdd(31));
 
-const reverseFun = (num) => {
-  const numStr = String(num);
-  return numStr.split("").reverse().join("");
-};
+// const reverseFun = (num) => {
+//   const numStr = String(num);
+//   return Number(numStr.split("").reverse().join(""));
+// };
 
-console.log(reverseFun(12));
+// console.log(reverseFun(12));
+
+const array1 = [1, 4];
+const array2 = [2, 3, 7, 2, 3];
+const result = array1.concat(array2);
+console.log(result.find((n) => n === 2));
+
+const newArr = result.filter((value) => value !== 2);
+console.log(newArr);
+console.log(result);
+console.log(result.findIndex((value) => value === 3));
