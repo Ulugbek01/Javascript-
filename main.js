@@ -177,3 +177,30 @@ function Max(...numbers) {
 }
 
 console.log(Max(1, 12, 5, 8));
+
+let student = {
+  name: "John",
+  age: 30,
+  isAdmin: false,
+  courses: ["html", "css", "js"],
+  wife: null,
+};
+let json = JSON.stringify(student);
+console.log(JSON.parse(json));
+
+let func = function (...args) {
+  console.log(args);
+};
+
+func(3);
+console.log("--------------------------------");
+
+let sum = (x, y, z) => {
+  //   console.log(x);
+  //   console.log(y);
+  //   console.log(z);
+  console.log(x + y + z);
+};
+let num1 = [1, 2, 3, 4, 5];
+
+sum(...num1);
