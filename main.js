@@ -125,10 +125,55 @@
 
 const array1 = [1, 4];
 const array2 = [2, 3, 7, 2, 3];
-const result = array1.concat(array2);
-console.log(result.find((n) => n === 2));
+console.log(array2.reverse());
+// const result = array1.concat(array2);
+// console.log(result.find((n) => n === 2));
 
-const newArr = result.filter((value) => value !== 2);
-console.log(newArr);
-console.log(result);
-console.log(result.findIndex((value) => value === 3));
+// const newArr = result.filter((value) => value !== 2);
+// console.log(newArr);
+// console.log(result);
+// console.log(result.findIndex((value) => value === 3));
+var collection = [undefined, [], 5, null, 10, "JavaScript", NaN, [3, [14, 15]]];
+console.log(collection);
+console.log(collection.join(""));
+
+const obj = {
+  value: 3,
+};
+console.log(obj);
+obj.name = "index.html";
+
+console.log(obj);
+
+const obj1 = obj;
+
+const obj3 = { value: 3 };
+console.log(obj.value == obj3.value);
+
+const numbers = [
+  { value: 10 },
+  { value: 12 },
+  { value: 8 },
+  { value: -17 },
+  { value: 23 },
+];
+
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i].value);
+}
+
+for (let number of numbers) {
+  console.log(number.value);
+}
+console.log("------------------------");
+function Max(...numbers) {
+  let res = 0;
+  for (let number of numbers) {
+    if (res < number) {
+      res = number;
+    }
+  }
+  return res;
+}
+
+console.log(Max(1, 12, 5, 8));
